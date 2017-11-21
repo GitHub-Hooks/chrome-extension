@@ -30,6 +30,6 @@
     "js": ["./public/content_scripts/oauth-callback.js"]
   }, {
     "matches": ["https://github.com/*/*/compare/*?expand=1"],
-    "js": ["./public/content_scripts/open-a-pull-request.js"]
+    "js": ["./public/content_scripts/pull-request-compare.js"]
   }]
 }
