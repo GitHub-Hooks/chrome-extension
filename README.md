@@ -1,4 +1,4 @@
-# github-hooks
+# GitHub Hooks - Chrome Extension
 
 Chrome extension that runs hooks within GitHub’s web app
 

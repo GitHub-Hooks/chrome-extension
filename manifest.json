@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "GitHub Hooks",
+  "name": "GitHub UI Hooks",
   "version": "1.0.0",
   "description": "Chrome extension that runs hooks within GitHub’s web app",
   "icons": {
@@ -9,15 +9,27 @@
     "128": "./icons/logomark-128.png"
   },
   "browser_action": {
-    "default_icon": "./icons/logomark-19.png",
-    "default_popup": "./dist/popup.html"
+    "default_icon": {
+      "16": "./icons/logomark-16.png",
+      "48": "./icons/logomark-48.png",
+      "128": "./icons/logomark-128.png"
+    }
   },
   "background": {
-    "scripts": ["dist/eventPage.js"],
+    "scripts": ["./public/background/index.js"],
     "persistent": false
   },
   "permissions": [
     "activeTab",
-    "storage"
-  ]
+    "storage",
+    "tabs",
+    "https://github.com/*"
+  ],
+  "content_scripts": [{
+    "matches": ["https://github.com/github-ui-hooks/readme/wiki/success"],
+    "js": ["./public/content_scripts/oauth-callback.js"]
+  }, {
+    "matches": ["https://github.com/*/*/compare/*?expand=1"],
+    "js": ["./public/content_scripts/open-a-pull-request.js"]
+  }]
 }
