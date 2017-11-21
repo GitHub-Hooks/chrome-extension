@@ -22,7 +22,7 @@ chrome.storage.sync.get({
     const script = document.createElement('script');
     script.innerHTML = `
       ${payload}
-      hooks['pull-request-compare']({branch: ${JSON.stringify(branch)}});
+      GITHUB_UI_HOOKS['pull-request-compare']({branch: ${JSON.stringify(branch)}});
     `;
     document.head.appendChild(script);
   })
