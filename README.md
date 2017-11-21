@@ -2,6 +2,6 @@
 
 Chrome extension that runs hooks within GitHub’s web app
 
-# Credit
+## License
 
-- Modified hook icon by [Rohith M S](https://thenounproject.com/search/?q=hook&i=942366)
+MIT
