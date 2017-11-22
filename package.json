@@ -6,6 +6,7 @@
   "author": "ewolfe <e@ewolfe.me>",
   "license": "MIT",
   "scripts": {
+    "dev": "tsc --watch",
     "build": "tsc"
   },
   "devDependencies": {
