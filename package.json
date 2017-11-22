@@ -5,6 +5,9 @@
   "repository": "git@github.com:github-ui-hooks/chrome-extension.git",
   "author": "ewolfe <e@ewolfe.me>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
   "devDependencies": {
     "typescript": "^2.6.1"
   }

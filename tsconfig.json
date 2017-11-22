@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./github-ui-hooks",
+    "allowJs": true,
+    "target": "es6"
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
