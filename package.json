@@ -1,0 +1,11 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:github-ui-hooks/chrome-extension.git",
+  "author": "ewolfe <e@ewolfe.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.6.1"
+  }
+}
