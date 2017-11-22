@@ -16,7 +16,7 @@
     }
   },
   "background": {
-    "scripts": ["./public/background/index.js"],
+    "scripts": ["./github-ui-hooks/background/index.js"],
     "persistent": false
   },
   "permissions": [
@@ -27,9 +27,9 @@
   ],
   "content_scripts": [{
     "matches": ["https://github.com/github-ui-hooks/github-ui-hooks/wiki/success"],
-    "js": ["./public/content_scripts/oauth-callback.js"]
+    "js": ["./github-ui-hooks/content_scripts/oauth-callback.js"]
   }, {
     "matches": ["https://github.com/*/*/compare/*?expand=1"],
-    "js": ["./public/content_scripts/pull-request-compare.js"]
+    "js": ["./github-ui-hooks/content_scripts/pull-request-compare.js"]
   }]
 }
